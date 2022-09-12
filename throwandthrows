@@ -1,0 +1,10 @@
+package exception;
+
+public class ThrowAndThrows {
+    public static void main(String[] args) throws  Exception{
+        exception();
+    }
+    public static void exception() throws Exception{//this method migth throw an exception
+        throw new UserDefinded("it is userdefined");//this will throw an exception
+    }
+}
