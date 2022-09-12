@@ -1,0 +1,36 @@
+package exception;
+
+public class Rethrow {
+    public static void main(String[] args) {
+       int  a = 5;
+        int b = 0;
+        try{
+        divide(1,b);
+    }
+    catch(Exception e){
+        System.out.println("catch block");
+
+        }
+    }
+    public static void divide(int a, int b){
+
+        try{
+            int divide = a /b;
+        }
+        catch(Exception e ){
+            System.out.println("rethrowing will happen and it will send to the main method");
+            throw e;
+        }
+    }
+    public void exception() {
+    try{
+        divide(5,0);
+    }
+    catch(Exception e){
+        e.printStackTrace();
+    }
+//    catch(ArithmeticException a){
+//
+//    }as it will throw compilation error as the arithmetic exception has already caught.
+    }
+}
