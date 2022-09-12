@@ -1,0 +1,7 @@
+package exception;
+
+public class UserDefinded extends Exception {
+    public UserDefinded(String Message){
+        super(Message);
+    }
+}
